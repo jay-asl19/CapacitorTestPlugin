@@ -17,6 +17,7 @@ public class GershadCapacitorPluginPlugin extends Plugin {
 
         JSObject ret = new JSObject();
         ret.put("value", implementation.echo(value));
+        Toast.makeText(getContext(), "Holla boy plugin value is" + value, Toast.LENGTH_SHORT).show();
         call.resolve(ret);
     }
 }
